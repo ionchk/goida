@@ -20,57 +20,41 @@ cd ping-pong
 make
 ./pong
 Telegram-бот «Приём заказов»
-Простой и удобный бот для приёма заказов от клиентов. Позволяет пользователю быстро оформить заказ через диалог: выбор категории → комментарий/пожелания → прикрепление файлов (фото, документы) → подтверждение.
-После подтверждения заказ автоматически отправляется менеджеру.
+Простой и удобный бот для приёма заказов от клиентов. Позволяет быстро оформить заказ через диалог.
 Возможности:
 
-/neworder — оформить новый заказ (пошаговый диалог)
-/myorders — показать мои последние заказы
-/help — справка
-/cancel — отменить текущее действие
-Автоматическая пересылка заказа менеджеру
-Сохранение всех заказов в orders.json
+/neworder — оформить новый заказ
+/myorders — мои последние заказы
+Автоматическая пересылка менеджеру
+Сохранение заказов в orders.json
 
-Ссылка на проект: telegram-bot/
+Папка проекта: tgbot/
 
-## Лабораторные работы
+Лабораторные работы
 По C++
 
-Линейные алгоритмы (ввод-вывод C-style и C++-style) — C++/lab1/main.cpp
-Ветвление (точка относительно круга) — C++/lab2/main.cpp
-Циклы while / do-while (сумма ряда) — C++/lab3/main.cpp
-Цикл for + одномерный массив — C++/lab4/main.cpp
-Двумерный массив + указатели — C++/lab5/main.cpp
-Строки — C++/lab6/main.cpp
-Функции (факториал + сочетания) — C++/lab7/main.cpp
+Линейные алгоритмы — C++/1/main.cpp
+Ветвление — C++/2/main.cpp
+Циклы while/do-while — C++/3/main.cpp
+Массивы — C++/4/main.cpp
+Двумерные массивы — C++/5/main.cpp
+Строки — C++/6/main.cpp
+Функции — C++/7/main.cpp
 
-Собрать все лабораторные:
-Bashcd C++
-make
 По Python
 
-ANSI и вывод в консоль — python-labs/lab1/main.py
-CSV и XML — python-labs/lab2/main.py
-Tkinter (генератор ключей) — python-labs/lab3/main.py
-Задача о рюкзаке — python-labs/lab4/main.py
-Регулярные выражения — python-labs/lab5/main.py
-ООП (Person → Student/Teacher) — python-labs/lab6/main.py
-
-Запуск пример:
-Bashpython3 python-labs/lab1/main.py
-
-## Задания по HTML
-17 практических работ — html-tasks/
-
-## Резюме
-PDF-файлы в корне репозитория:
-
-Resume Mozgalov D.E.pdf (English)
-Резюме Мозгалов Д.Е.pdf (Русский)
+ANSI вывод — python-labs/py1/main.py
+CSV и XML — python-labs/py2/main.py
+Tkinter — python-labs/py3/main.py
+Задача о рюкзаке — python-labs/py4/main.py
+Регулярные выражения — python-labs/py5/main.py
+ООП — python-labs/py6/main.py
 
 
-## Источники заданий
+Задания по HTML
+17 практических работ
 
-Литвинская О.С. и др. "Основы программирования на языке C++". Методичка.
-Лабораторный практикум по Python.
-Практические работы по HTML (html_tasks.pdf).
+Резюме
+
+Resume Mozgalov D.E.pdf
+Резюме Мозгалов Д.Е.pdf
