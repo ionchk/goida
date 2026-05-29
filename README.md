@@ -19,7 +19,11 @@
 cd ping-pong
 make
 ./pong
-Telegram-бот «Приём заказов»
+
+## Telegram-бот «Приём заказов»
+
+---
+
 Простой и удобный бот для приёма заказов от клиентов. Позволяет быстро оформить заказ через диалог.
 Возможности:
 
@@ -30,8 +34,9 @@ Telegram-бот «Приём заказов»
 
 Папка проекта: tgbot/
 
-Лабораторные работы
-По C++
+## Лабораторные работы
+
+### По C++
 
 Линейные алгоритмы — C++/1/main.cpp
 Ветвление — C++/2/main.cpp
@@ -41,7 +46,7 @@ Telegram-бот «Приём заказов»
 Строки — C++/6/main.cpp
 Функции — C++/7/main.cpp
 
-По Python
+### По Python
 
 ANSI вывод — python-labs/py1/main.py
 CSV и XML — python-labs/py2/main.py
@@ -51,10 +56,10 @@ Tkinter — python-labs/py3/main.py
 ООП — python-labs/py6/main.py
 
 
-Задания по HTML
+### Задания по HTML
 17 практических работ
 
-Резюме
+### Резюме
 
 Resume Mozgalov D.E.pdf
 Резюме Мозгалов Д.Е.pdf
