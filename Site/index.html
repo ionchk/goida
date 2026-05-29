@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Даниил Мозгалов — Портфолио</title>
+  <style>
+    :root {
+      --purple: #6b46c1;
+      --purple-dark: #553c9a;
+      --white: #ffffff;
+      --gray: #f8f9fa;
+      --text: #2d2d2d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--white);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .hero {
+      background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+      color: white;
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .hero__inner {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero__photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 6px solid rgba(255,255,255,0.2);
+      object-fit: cover;
+    }
+
+    .hero__name {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero__eyebrow {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    .hero__tagline {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 25px;
+      opacity: 0.95;
+    }
+
+    .hero__meta {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .hero__cta {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .btn--primary {
+      background: white;
+      color: var(--purple);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Navigation */
+    .topnav {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .topnav__inner {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+    }
+
+    .topnav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .topnav a:hover {
+      color: var(--purple);
+    }
+
+    /* Sections */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section__title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: var(--purple);
+    }
+
+    .grid {
+      display: grid;
+      gap: 25px;
+    }
+
+    .grid--2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+    .grid--3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card--link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: var(--purple-dark);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero__inner { flex-direction: column; }
+      .hero__name { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container hero__inner">
+      <img class="hero__photo" src="assets/photo.jpg" alt="Даниил Мозгалов">
+      <div>
+        <p class="hero__eyebrow">Junior Программист</p>
+        <h1 class="hero__name">Даниил Мозгалов</h1>
+        <p class="hero__tagline">Студент Московского колледжа деловой карьеры по специальности «Информационные системы и программирование».</p>
+        <div class="hero__meta">
+          <span>📍 Москва</span>
+          <span>🎂 19 лет</span>
+          <span>🇷🇺 Россия</span>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="mailto:mozgalov2018@mail.ru">Написать мне</a>
+          <a class="btn" href="tel:+79854341342" style="background:rgba(255,255,255,0.2); color:white;">+7 (985) 434-13-42</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="topnav">
+    <div class="container topnav__inner">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#education">Образование</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="about" class="section">
+      <h2 class="section__title">Обо мне</h2>
+      <p style="max-width: 700px; margin: 0 auto; text-align: center; font-size: 1.1rem;">
+        Я студент Московского колледжа деловой карьеры. Изучаю программирование и тонкости сборки ПК. 
+        Активно развиваюсь в Python и C++.
+      </p>
+    </section>
+
+    <section id="skills" class="section" style="background: var(--gray);">
+      <h2 class="section__title">Навыки</h2>
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>Программирование</h3>
+          <ul style="margin-top: 15px; line-height: 1.8;">
+            <li>Python (Pre-Junior)</li>
+            <li>C++ (Basic)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Технические навыки</h3>
+          <ul style="margin-top: 15px; line-height: 1.8;">
+            <li>Windows 7–11</li>
+            <li>Linux</li>
+            <li>Диагностика и ремонт ПК</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Качества</h3>
+          <ul style="margin-top: 15px; line-height: 1.8;">
+            <li>Стрессоустойчивость</li>
+            <li>Ответственность</li>
+            <li>Пунктуальность</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section__title">Образование</h2>
+      <div class="card" style="max-width: 700px; margin: 0 auto;">
+        <h3>Московский колледж деловой карьеры</h3>
+        <p class="muted">2025 — настоящее время</p>
+        <p><strong>Специальность:</strong> Информационные системы и программирование</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section" style="background: var(--gray);">
+      <h2 class="section__title">Проекты</h2>
+      <div class="grid grid--2">
+        <a class="card card--link" href="">
+          <h3>Ping Pong (C++)</h3>
+          <p>Классическая аркадная игра в терминале.</p>
+        </a>
+        <a class="card card--link" href="">
+          <h3>Telegram-бот «Сдача ДЗ»</h3>
+          <p>Бот для удобной сдачи домашних заданий.</p>
+        </a>
+        <a class="card card--link" href="">
+          <h3>Практика HTML/CSS</h3>
+          <p>17 учебных работ.</p>
+        </a>
+        <a class="card card--link" href="">
+          <h3>Лабораторные C++</h3>
+          <p>Алгоритмы, массивы, функции.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section__title">Контакты</h2>
+      <div class="grid grid--2" style="max-width: 700px; margin: 0 auto;">
+        <div class="card">
+          <h3>Связаться</h3>
+          <p>📧 <a href="mailto:mozgalov2018@mail.ru">mozgalov2018@mail.ru</a></p>
+          <p>📞 <a href="tel:+79854341342">+7 (985) 434-13-42</a></p>
+        </div>
+        <div class="card">
+          <h3>Ссылки</h3>
+          <p><a href="https://github.com/Iinnssomniiaq">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Даниил Мозгалов • Учебное портфолио</p>
+    </div>
+  </footer>
+</body>
+</html>
