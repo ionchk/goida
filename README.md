@@ -1,129 +1,72 @@
-# Материалы к диффзачету — Ожигов Сергей
+# Портфолио — Мозгалов Даниил
 
-Здесь собраны все работы для допуска к диффзачету по дисциплине "Основы алгоритмизации и программированию".
+## Что тут?
+- Сайт-портфолио
+- Игра **Ping Pong** на C++
+- 7 лабораторных работ по C++
+- 6 лабораторных работ по Python
+- Telegram-бот для приёма оптовых заказов
+- 17 заданий по HTML
 
-Сайт с портфолио и резюме: https://WL-52.github.io/repository-my-lab/
-
-## Что здесь лежит
-
-- Web-Site/ - HTML-сайт с резюме на русском и английском
-- ping-pong-cpp/ - игра Ping Pong на C++ (в терминале)
-- C++/ - 7 лабораторных работ по C++
-- python-labs/ - 6 лабораторных работ по Python
-- telegram-bot/ - бот для сдачи домашки преподу
-- HTML/ - 17 заданий по HTML
+---
 
 ## Проекты
 
 ### Ping Pong (C++)
+Аркадная игра в терминале.
 
-Аркадная игра в терминале. Есть режим игрок против игрока и игрок против компьютера.
-Собирается командой make.
+```bash
+cd ping-pong
+make
+./pong
+Telegram-бот «Приём заказов»
+Простой и удобный бот для приёма заказов от клиентов. Позволяет пользователю быстро оформить заказ через диалог:
+выбор категории → комментарий/пожелания → прикрепление файлов → подтверждение.
+После подтверждения заказ автоматически отправляется менеджеру.
+Возможности:
 
-    cd ping-pong-cpp
-    make
-    ./pong
+/neworder — оформить новый заказ (пошаговый диалог)
+/myorders — показать мои последние заказы
+/help — справка
+/cancel — отменить текущее действие
 
-Подробнее: ping-pong-cpp/README.md
 
-### Telegram-бот "Сдача ДЗ"
+## Лабораторные работы
+По C++
 
-Бот для колледжа. Студент пишет /submit, выбирает предмет, пишет комментарий,
-прикрепляет файл и отправляет. Бот пересылает все преподавателю.
+Линейные алгоритмы (ввод-вывод C-style и C++-style) — C++/lab1/main.cpp
+Ветвление (точка относительно круга) — C++/lab2/main.cpp
+Циклы while / do-while (сумма ряда) — C++/lab3/main.cpp
+Цикл for + одномерный массив — C++/lab4/main.cpp
+Двумерный массив + указатели — C++/lab5/main.cpp
+Строки — C++/lab6/main.cpp
+Функции (факториал + сочетания) — C++/lab7/main.cpp
 
-Запуск:
+Собрать все лабораторные:
+Bashcd C++
+make
+По Python
 
-    cd telegram-bot
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip install -r requirements.txt
+ANSI и вывод в консоль — python-labs/lab1/main.py
+CSV и XML — python-labs/lab2/main.py
+Tkinter (генератор ключей) — python-labs/lab3/main.py
+Задача о рюкзаке — python-labs/lab4/main.py
+Регулярные выражения — python-labs/lab5/main.py
+ООП (Person → Student/Teacher) — python-labs/lab6/main.py
 
-Нужно создать файл .env и вписать туда BOT_TOKEN (получить у @BotFather)
-и TEACHER_CHAT_ID (узнать через @userinfobot).
-
-    cp .env.example .env
-
-Потом:
-
-    export BOT_TOKEN="..."
-    export TEACHER_CHAT_ID="..."
-    python3 bot.py
-
-Команды: /start, /submit, /list, /help, /cancel
-
-Подробнее: telegram-bot/README.md
-
-## Лабораторные работы по C++
-
-1. Линейные алгоритмы (ввод-вывод C-style и C++-style) - C++/lab1/main.cpp
-2. Ветвление (точка относительно круга) - C++/lab2/main.cpp
-3. Циклы while / do-while (сумма ряда) - C++/lab3/main.cpp
-4. Цикл for + одномерный массив - C++/lab4/main.cpp
-5. Двумерный массив + указатели - C++/lab5/main.cpp
-6. Строки - C++/lab6/main.cpp
-7. Функции (факториал + сочетания) - C++/lab7/main.cpp
-
-Собрать все:
-
-    cd C++
-    make
-
-Запустить:
-
-    ./lab1/lab
-    ./lab2/lab
-    ...
-
-## Лабораторные работы по Python
-
-1. ANSI и вывод в консоль - python-labs/lab1/main.py
-2. CSV и XML - python-labs/lab2/main.py
-3. Tkinter (генератор ключей) - python-labs/lab3/main.py
-4. Задача о рюкзаке (жадный + динамическое программирование) - python-labs/lab4/main.py
-5. Регулярные выражения - python-labs/lab5/main.py
-6. ООП (Person -> Student/Teacher, класс Group) - python-labs/lab6/main.py
-
-Запуск:
-
-    python3 python-labs/lab1/main.py
-    python3 python-labs/lab2/main.py
-    ...
 
 ## Задания по HTML
-
-17 практических работ. Открыть оглавление: HTML/index.html
-
-## GitHub Actions
-
-В папке .github/workflows лежат 3 workflow:
-- pages.yml - публикует сайт на GitHub Pages
-- cpp.yml - собирает Pong и лабы на Linux
-- python.yml - проверяет Python-лабы и бота
-
-После первого пуша в main нужно включить Pages:
-Settings -> Pages -> Source = GitHub Actions
+17 практических работ — html-tasks/
 
 ## Резюме
+PDF-файлы в корне репозитория:
 
-На сайте: Web-Site/resume.html (RU + EN)
-PDF в корне репозитория:
-- Resume Udin.docx.pdf (английский)
-- Резюме Юдин.docx (1).pdf (русский)
+Resume Mozgalov D.E.pdf (English)
+Резюме Мозгалов Д.Е.pdf (Русский)
+
 
 ## Источники заданий
 
-- Литвинская О.С. и др. "Основы программирования на языке C++". Методичка к лабораторным. Пенза, 2017. (файл metodichpipo (1).pdf)
-- Лабораторный практикум 1-6 по Python (файл .docx)
-- Практические работы по HTML (файл html_tasks.pdf)
-
-## Как запушить на GitHub
-
-    cd "Ozhigov-Sergey"
-    git init
-    git add .
-    git commit -m "Initial commit"
-    git branch -M main
-    git remote add origin https://github.com/WL-52/repository-my-lab.git
-    git push -u origin main
-
-Потом зайти в Settings -> Pages и выбрать GitHub Actions.
+Литвинская О.С. и др. "Основы программирования на языке C++". Методичка к лабораторным. Пенза, 2017.
+Лабораторный практикум по Python.
+Практические работы по HTML.
